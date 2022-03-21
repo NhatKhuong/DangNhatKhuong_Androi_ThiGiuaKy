@@ -68,7 +68,7 @@
         app:srcCompat="@drawable/startduoi" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnstart"
         android:layout_width="343dp"
         android:layout_height="65dp"
         android:background="@drawable/boderbuuton"

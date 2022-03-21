@@ -2,13 +2,16 @@ package com.example.a19438561_dangnhatkhuong;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GoodsAdapter extends BaseAdapter {
@@ -69,6 +72,23 @@ public class GoodsAdapter extends BaseAdapter {
         });
 
         return view;
+
+    }
+
+    public  void loc(int i){
+        listFilter = new ArrayList<>();
+        for (Goods item: listGoods){
+            if (item.getLoai() == i){
+                listFilter.add(item);
+            }
+        }
+        notifyDataSetChanged();
+    }
+
+    public void activebutton(Button btn1,Button btn2,Button btn3){
+        btn1.setBackgroundColor(Color.GREEN);
+        btn2.setBackgroundColor(Color.WHITE);
+        btn3.setBackgroundColor(Color.WHITE);
 
     }
 }
