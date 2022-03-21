@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.19438561_DangNhatKhuong">
         <activity
-            android:name=".Screen2"
+            android:name=".GoodsDetail"
             android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".Screen2" -->
+        <!-- android:exported="false" /> -->
         <activity
-            android:name=".MainActivity"
+            android:name=".Screen2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
